@@ -1,8 +1,11 @@
-# mcpruntime
+# MCP Runtime
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/grokify/mcpruntime.svg)](https://pkg.go.dev/github.com/grokify/mcpruntime)
-[![Go Report Card](https://goreportcard.com/badge/github.com/grokify/mcpruntime)](https://goreportcard.com/report/github.com/grokify/mcpruntime)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Build Status][build-status-svg]][build-status-url]
+[![Lint Status][lint-status-svg]][lint-status-url]
+[![Go Report Card][goreport-svg]][goreport-url]
+[![Docs][docs-godoc-svg]][docs-godoc-url]
+[![Visualization][viz-svg]][viz-url]
+[![License][license-svg]][license-url]
 
 A library-first runtime for building MCP servers with interchangeable execution modes.
 
@@ -320,3 +323,18 @@ rt.ToolCount() int
 ## License
 
 MIT License - see LICENSE file for details.
+
+ [build-status-svg]: https://github.com/grokify/mcpruntime/actions/workflows/ci.yaml/badge.svg?branch=main
+ [build-status-url]: https://github.com/grokify/mcpruntime/actions/workflows/ci.yaml
+ [lint-status-svg]: https://github.com/grokify/mcpruntime/actions/workflows/lint.yaml/badge.svg?branch=main
+ [lint-status-url]: https://github.com/grokify/mcpruntime/actions/workflows/lint.yaml
+ [goreport-svg]: https://goreportcard.com/badge/github.com/grokify/mcpruntime
+ [goreport-url]: https://goreportcard.com/report/github.com/grokify/mcpruntime
+ [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/grokify/mcpruntime
+ [docs-godoc-url]: https://pkg.go.dev/github.com/grokify/mcpruntime
+ [viz-svg]: https://img.shields.io/badge/visualizaton-Go-blue.svg
+ [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=grokify%2Fmcpruntime
+ [loc-svg]: https://tokei.rs/b1/github/grokify/mcpruntime
+ [repo-url]: https://github.com/grokify/mcpruntime
+ [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
+ [license-url]: https://github.com/grokify/mcpruntime/blob/master/LICENSE
