@@ -1,0 +1,45 @@
+{
+  "ir_version": "1.0",
+  "project": "mcpruntime",
+  "repository": "https://github.com/grokify/mcpruntime",
+  "versioning": "semver",
+  "commit_convention": "conventional",
+  "maintainers": ["grokify", "johncwang@gmail.com"],
+  "releases": [
+    {
+      "version": "0.1.0",
+      "date": "2026-01-10",
+      "added": [
+        {"description": "Runtime type wrapping mcp.Server with dual execution modes (library and server)"},
+        {"description": "New() constructor with Options for runtime configuration"},
+        {"description": "MCPServer() escape hatch for advanced MCP SDK access"},
+        {"description": "Implementation() getter for server identity"},
+        {"description": "AddTool[In, Out]() generic helper with automatic schema inference"},
+        {"description": "AddToolHandler() low-level tool registration"},
+        {"description": "CallTool() for library-mode direct invocation"},
+        {"description": "RemoveTools(), ListTools(), HasTool(), ToolCount() tool management methods"},
+        {"description": "AddPrompt() for prompt registration"},
+        {"description": "GetPrompt() for library-mode direct invocation"},
+        {"description": "RemovePrompts(), ListPrompts(), HasPrompt(), PromptCount() prompt management methods"},
+        {"description": "AddResource() for static resource registration"},
+        {"description": "AddResourceTemplate() for dynamic URI template resources (server mode only)"},
+        {"description": "ReadResource() for library-mode direct invocation"},
+        {"description": "RemoveResources(), RemoveResourceTemplates() resource removal methods"},
+        {"description": "ListResources(), HasResource(), ResourceCount() resource management methods"},
+        {"description": "ServeStdio() for stdio transport (subprocess mode)"},
+        {"description": "ServeIO() for custom IO streams"},
+        {"description": "Serve() for custom MCP transports"},
+        {"description": "Connect() for session-based connections"},
+        {"description": "StreamableHTTPHandler() for HTTP/SSE transport"},
+        {"description": "SSEHandler() for legacy SSE transport"},
+        {"description": "InMemorySession() for testing with full MCP semantics"}
+      ],
+      "documentation": [
+        {"description": "Comprehensive README with library and server mode examples"},
+        {"description": "Feature comparison matrix (library vs server mode)"},
+        {"description": "MCP feature adoption guidance"},
+        {"description": "Full API reference documentation"}
+      ]
+    }
+  ]
+}
