@@ -3,7 +3,7 @@ module github.com/grokify/mcpruntime
 go 1.24.0
 
 require (
-	github.com/grokify/mogo v0.72.5
+	github.com/grokify/mogo v0.72.6
 	github.com/modelcontextprotocol/go-sdk v1.2.0
 	golang.ngrok.com/ngrok v1.13.0
 )
