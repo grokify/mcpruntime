@@ -8,23 +8,23 @@
   "releases": [
     {
       "version": "v0.2.0",
-      "date": "",
+      "date": "2026-01-11",
       "highlights": [
         {"description": "OAuth 2.1 Authorization Code + PKCE support for ChatGPT.com and other MCP clients requiring user authentication"},
         {"description": "HTTP server mode with optional ngrok tunnel for public URL exposure"},
         {"description": "Bearer token authentication for protecting MCP endpoints"}
       ],
       "added": [
-        {"description": "`ServeHTTP()` method for HTTP transport with graceful shutdown", "commit": ""},
-        {"description": "`NgrokOptions` for automatic ngrok tunnel creation with custom domain support", "commit": ""},
-        {"description": "`OAuth2Options` for OAuth 2.1 Authorization Code + PKCE authentication", "commit": ""},
-        {"description": "`oauth2server` package implementing RFC 7636 (PKCE), RFC 7591 (DCR), RFC 8414, RFC 9728", "commit": ""},
-        {"description": "Bearer token authentication middleware for protected MCP endpoints", "commit": ""},
-        {"description": "`HTTPServerResult` with local and public URLs plus OAuth credentials", "commit": ""},
-        {"description": "`OnReady` callback in `HTTPServerOptions` for server lifecycle events", "commit": ""}
+        {"description": "`ServeHTTP()` method for HTTP transport with graceful shutdown", "commit": "bb710f5"},
+        {"description": "`NgrokOptions` for automatic ngrok tunnel creation with custom domain support", "commit": "bb710f5"},
+        {"description": "`OAuth2Options` for OAuth 2.1 Authorization Code + PKCE authentication", "commit": "bb710f5"},
+        {"description": "`oauth2server` package implementing RFC 7636 (PKCE), RFC 7591 (DCR), RFC 8414, RFC 9728", "commit": "bb710f5"},
+        {"description": "Bearer token authentication middleware for protected MCP endpoints", "commit": "bb710f5"},
+        {"description": "`HTTPServerResult` with local and public URLs plus OAuth credentials", "commit": "bb710f5"},
+        {"description": "`OnReady` callback in `HTTPServerOptions` for server lifecycle events", "commit": "bb710f5"}
       ],
       "deprecated": [
-        {"description": "`OAuthOptions` (client_credentials only) in favor of `OAuth2Options` with full OAuth 2.1 PKCE support", "commit": ""}
+        {"description": "`OAuthOptions` (client_credentials only) in favor of `OAuth2Options` with full OAuth 2.1 PKCE support", "commit": "bb710f5"}
       ]
     },
     {
