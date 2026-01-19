@@ -751,10 +751,41 @@ func (s *Server) redirectWithError(w http.ResponseWriter, r *http.Request, redir
 }
 
 func isValidRedirectURI(uri string, allowed []string) bool {
+	if uri == "" {
+		return false
+	}
+
+	// Parse the requested URI
+	requestedURL, err := url.Parse(uri)
+	if err != nil {
+		return false
+	}
+
 	for _, a := range allowed {
-		// "*" is a special marker meaning "allow any redirect URI"
-		if a == "*" || a == uri {
-			return true
+		// Skip empty entries and wildcards (wildcards are not secure)
+		if a == "" || a == "*" {
+			continue
+		}
+
+		// Parse the allowed URI
+		allowedURL, err := url.Parse(a)
+		if err != nil {
+			continue
+		}
+
+		// Check if this is an absolute URI (has scheme)
+		if allowedURL.Scheme != "" {
+			// For absolute URIs: require exact scheme, host, and path match
+			if requestedURL.Scheme == allowedURL.Scheme &&
+				strings.EqualFold(requestedURL.Host, allowedURL.Host) &&
+				requestedURL.Path == allowedURL.Path {
+				return true
+			}
+		} else {
+			// For relative URIs: require exact match of path
+			if requestedURL.Path == allowedURL.Path && requestedURL.Host == "" && requestedURL.Scheme == "" {
+				return true
+			}
 		}
 	}
 	return false
