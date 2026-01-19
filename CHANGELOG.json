@@ -7,6 +7,19 @@
   "maintainers": ["agentplexus"],
   "releases": [
     {
+      "version": "v0.3.1",
+      "date": "2026-01-18",
+      "highlights": [
+        {"description": "Security fix for open URL redirect vulnerability in OAuth2 server"}
+      ],
+      "security": [
+        {"description": "Close open URL redirect vulnerability in `isValidRedirectURI` - wildcards no longer allow arbitrary redirect URIs", "commit": "edac011"}
+      ],
+      "fixed": [
+        {"description": "OAuth2 redirect URI validation now properly parses and validates URIs structurally", "commit": "edac011"}
+      ]
+    },
+    {
       "version": "v0.3.0",
       "date": "2026-01-18",
       "highlights": [
