@@ -6,7 +6,7 @@ require (
 	github.com/grokify/mogo v0.74.8
 	github.com/modelcontextprotocol/go-sdk v1.7.0
 	golang.ngrok.com/ngrok v1.13.0
-	golang.org/x/mod v0.40.0
+	golang.org/x/mod v0.41.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
